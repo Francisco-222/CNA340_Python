@@ -1,0 +1,27 @@
+item1_name = str(input("Enter food item name:\n"))
+item1_price = float(input("Enter item price:\n"))
+item1_quant = int(input("Enter item quantity:"))
+item1_total = float(item1_price * item1_quant)
+print ("")
+print ("\nRECEIPT")
+print (item1_quant, item1_name, "@ $%.2f = $%.2f"%(item1_price, item1_total))
+print ("Total cost: $%.2f" % item1_total)
+print ("")
+print ("")
+item2_name = str(input("Enter second food item name:\n"))
+item2_price = float(input("Enter item price:\n"))
+item2_quant = int(input("Enter item quantity:"))
+item2_total = float(item2_price * item2_quant)
+totals = item1_total + item2_total
+gratuity = totals * 0.15
+total_grat = totals + gratuity
+print ("")
+print ("")
+
+print ("RECEIPT")
+print (item1_quant, item1_name, "@ $%.2f = $%.2f" %(item1_price, item1_total))
+print (item2_quant, item2_name, "@ $%.2f = $%.2f" %(item2_price, item2_total))
+print ("Total cost: $%.2f" %totals)
+print ("")
+print ("15%% gratuity: $%.2f" %gratuity)
+print ("Total with tip: $%.2f" % total_grat)
